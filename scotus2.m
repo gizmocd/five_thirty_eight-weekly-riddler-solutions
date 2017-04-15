@@ -13,14 +13,11 @@ sp1 = 43;% magic numbers
 sp2 = 43;% magic numbers
 sp3 = 43;% magic numbers
 SCOTUS = zeros(1,9);
-presidential_party = 'd';
-senate_party = 'r';% these will change (fourth!?) iteration
-                   % NOTE: this lack of randomness will be insignificant
-                   % with long-term modelling... 
+
 %main calculation
 for current_year=1:years
     %reelection every 4 years
-    %include senate for now (add 6 year cycles later)
+    
     if mod(current_year,4) == 0
         pp = randi(2);
     end
