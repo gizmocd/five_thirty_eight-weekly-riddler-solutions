@@ -2,7 +2,7 @@
 
 
 %years modelled
-years = 1000000;%**make this user determined later
+years = 1000000;
 
 %collected data
 yearly_scotus_number = zeros(1,years);
@@ -11,10 +11,7 @@ yearly_scotus_number = zeros(1,years);
 pp = 42;
 sp = 43;% magic numbers
 SCOTUS = zeros(1,9);
-presidential_party = 'd';
-senate_party = 'r';% these will change (fourth!?) iteration
-                   % NOTE: this lack of randomness will be insignificant
-                   % with long-term modelling... 
+
 %main calculation
 for current_year=1:years
     %reelection every 4 years
@@ -22,16 +19,6 @@ for current_year=1:years
     if mod(current_year,4) == 0
         pp = randi(2);
         sp = randi(2);%50-50 chances
-        if pp == 1
-            presidential_party = 'd';% d for democrat
-        else
-            presidential_party = 'r';% r for republican
-        end
-        if sp == 1
-            senate_party = 'd';% d for democrat
-        else
-            senate_party = 'r';% r for republican
-        end
     end
     
     % Next, decrement each judges remaining years (if zero do nothing).
