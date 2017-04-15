@@ -18,6 +18,7 @@ I implemented the rules above using my scotus.m script. To determine the average
 times at 1,000,000 years and determined the average number of judged on my model's SCOTUS to be about 7.8 (or an expected 
 vacancy of 1.2). The final graph is meaningless (too many data points on a small graph) but I include it as a quick way of 
 determining the mean via Tools->Data Statistics. 
+______________________________________________________________________________________________________________________________
 
 scotus2.m - this script is a modified version of scotus.m in which, for a slightly more realistic model, the senate is divided 
 into three classes and each class comes up for reelection every six years with each class' election separated by two year 
