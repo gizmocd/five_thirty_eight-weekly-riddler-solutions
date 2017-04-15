@@ -15,5 +15,5 @@ scotus.m - I wrote this script for the puzzle on 4/14/17 https://fivethirtyeight
   -The length of time for which a justice serves is uniformly distributed between zero and 40 years.
   
 I implemented the rules above using my scotus.m script. To determine the average number of vacancies, I ran my model multiple
-times at 100,000 years and determined the average number of judged on my model's SCOTUS to be about 7.8 (or an expected 
+times at 1,000,000 years and determined the average number of judged on my model's SCOTUS to be about 7.8 (or an expected 
 vacancy of 1.2). The final graph is meaningless (too many data points on a small graph) but I include it as a quick way of determining the mean via Tools->Data Statistics. 
